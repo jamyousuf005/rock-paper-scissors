@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="output.css">
+
+</head>
+
+<body class="flex justify-center flex-col items-center min-h-screen bg-gray-800 text-white">
+
+    <div class="text-center p-6 bg-gray-900 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4">Rock Paper Scissors</h1>
+
+        <div class="flex justify-center gap-4 mb-6">
+            <button id="rock"
+                class="choice-btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"="rock">Rock</button>
+            <button id="paper"
+                class="choice-btn bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"="paper">Paper</button>
+            <button id="scissors"
+                class="choice-btn bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Scissors</button>
+        </div>
+
+        <div>
+            <p class="text-lg font-semibold">Your Choice: <span id="user-choice" class="text-yellow-400">-</span></p>
+            <p class="text-lg font-semibold">Computer's Choice: <span id="computer-choice"
+                    class="text-yellow-400">-</span></p>
+            <p class="text-xl font-bold mt-4">Result: <button id="game-result" class="text-yellow-400">-</button></p>
+        </div>
+    </div>
+
+
+    <div class="mt-1 flex flex-col bg-slate-900 items-center justify-center space-y-6 p-6 rounded-lg shadow-md w-96">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-black">Scoreboard</h1>
+
+        <!-- Scores Section -->
+        <div class="flex justify-between w-full text-center text-lg">
+            <!-- User Score -->
+            <div class="flex flex-col items-center">
+                <span class="text-gray-600 font-medium">User Score</span>
+                <span id="userScore" class="text-4xl font-bold text-black">0</span>
+            </div>
+
+            <!-- Divider -->
+            <div class="h-full border-l m-1 border-gray-300"></div>
+
+            <!-- Computer Score -->
+            <div class="flex flex-col items-center">
+                <span class="text-gray-600 font-medium">Computer Score</span>
+                <span id="computerScore" class="text-4xl font-bold text-black">0</span>
+
+
+            </div>
+
+        </div>
+            <button id="resetButton"
+                class="p-1 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-lg border-gray-100">
+                Reset
+            </button>
+
+    </div>
+
+    <script src="rockpaper.js"></script>
+</body>
+
+</html>
